@@ -1,0 +1,46 @@
+#seats {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50vw;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+span {
+    font-size: 20em;
+    color: teal;
+}
+
+.sitButton {
+    border-radius: 2vw;
+    width: 25vw;
+    height: 7vh;
+}
+
+#backButton {
+    border-radius: 2vw;
+    width: 15vw;
+    height: 4vh;
+}
+
+p {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: seagreen;
+}
+
+button {
+    text-transform: uppercase;
+    font-size: 1em;
+    border: 0.3vw solid black;
+}
+
+button:hover {
+    background: lightgreen;
+    color: coral;
+}

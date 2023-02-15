@@ -1,0 +1,40 @@
+version: "3.9"
+services:
+  db:
+    image: postgres
+    expose:
+      - 5432
+    env_file:
+      - postgres.env
+  auth:
+    build: auth/.
+    expose:
+      - 9090
+  game:
+    build: game/.
+    expose:
+      - 9000
+    env_file:
+      - common.env
+  login:
+    build: login/.
+    expose:
+      - 9010
+    env_file:
+      - postgres.env
+      - database_conn.env
+  register:
+    build: register/.
+    expose:
+      - 9020
+    env_file:
+      - postgres.env
+      - database_conn.env
+  rooms:
+    build: rooms/.
+    expose:
+      - 8090
+  gateway:
+    build: gateway/.
+    ports:
+      - "8080:8080"

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://img.icons8.com/external-flat-icons-inmotus-design/512/external-game-games-flat-icons-inmotus-design.png" rel="icon" type="image/x-icon">
+    <link href="/css/game.css" rel="stylesheet" />
+    <script defer src="/js/game.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <title>Gameplay</title>
+</head>
+
+<body>
+    <div id="header">
+        <button id="backButton" onclick="history.back()">&lt Go back</button>
+        <span>
+          <p>WSL:</p>
+          <p id="wsl"></p>
+        </span>
+        <span>
+          <p>O player:</p>
+          <p id="oplayer"></p>
+        </span>
+        <span>
+          <p>X player:</p>
+          <p id="xplayer"></p>
+        </span>
+    </div>
+    <div id="board">
+    </div>
+</body>
+
+</html>

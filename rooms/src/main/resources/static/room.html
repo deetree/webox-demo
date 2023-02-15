@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://img.icons8.com/external-flat-icons-inmotus-design/512/external-game-games-flat-icons-inmotus-design.png"
+          rel="icon"
+          type="image/x-icon">
+    <link href="/css/room.css" rel="stylesheet" />
+    <script defer src="/js/room.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <title>Game room</title>
+</head>
+
+<body>
+    <button id="backButton" onclick="history.back()">&lt Go back</button>
+    <div id="seats">
+        <div id="oPlayerSection" class="section">
+            <span>O</span>
+            <p id="oPlayerSectionLabel">FREE</p>
+            <button id="oPlayerSeatButton" class="sitButton" onclick="oPlayerSeatAction()">Sit down</button>
+        </div>
+        <div id="xPlayerSection" class="section">
+            <span>X</span>
+            <p id="xPlayerSectionLabel">FREE</p>
+            <button id="xPlayerSeatButton" class="sitButton" onclick="xPlayerSeatAction()">Sit down</button>
+        </div>
+    </div>
+</body>
+
+</html>
